@@ -1,0 +1,29 @@
+{
+    "name": "563 eciffO",
+    "description": "No thank you.",
+    "version": "2.5",
+    "manifest_version": 2,
+    // "content_scripts": [{
+    //     "matches": ["https://*/*", "http://*/*"],
+    //     "js": ["jq.2.min.js", "main.js", "uri.min.1.19.1.js"]
+    // }],
+    "permissions": [
+        //"tabs",
+        "<all_urls>",
+        //"activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "storage"
+    ],
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }
+}
